@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Social" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Social" %>">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+  <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=""><%= image_tag("up down.png", :alt => "") %></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+    <!-- Portfolio Grid Section -->
+      <section id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2></h2>
+                        <hr class="star-primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="" class="portfolio-link" data-toggle="modal" alt="chuhongsson">
+                            <%= image_tag("diver.png", :alt => "chuhongsson") %>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <%= image_tag("champ.png", :alt => "") %>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <%= image_tag("golddigger.png", :alt => "") %>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <%= image_tag("player1.png", :alt => "") %>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <%= image_tag("tron1.png", :alt => "") %>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <%= image_tag("comment1.png", :alt => "") %>
+                        </a>
+                    </div>
+                </div>
+            </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="success" id="about">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2>Social</h2>
+                      <hr class="star-light">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-4 col-lg-offset-2">
+                      <p>An introduction to the basic principles and practices of garden design – how to survey and produce a scale plan of your own garden. With the use of colour, form and texture explore the design opportunities of plants and materials: soft landscape, hard landscape and other landscape features while developing ideas and a ‘’sense of place’’- not just a garden!</p>
+                  </div>
+                  <div class="col-lg-4">
+                      <p>This inspiring part-time course is ideal for anyone looking for a really thorough, practical introduction to garden design, whether for a specific project or just for their own interest. While it is not directly aimed at those looking to gain a professional qualification and work in the industry, it could also provide a valuable first step for anyone considering more in depth study</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </div>
+    	<!-- About footer -->
+    <section class="success" id="about">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2>Social</h2>
+                      <hr class="star-light">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-4 col-lg-offset-2">
+                      <p>An introduction to the basic principles and practices of garden design – how to survey and produce a scale plan of your own garden. With the use of colour, form and texture explore the design opportunities of plants and materials: soft landscape, hard landscape and other landscape features while developing ideas and a ‘’sense of place’’- not just a garden!</p>
+                  </div>
+                  <div class="col-lg-4">
+                      <p>This inspiring part-time course is ideal for anyone looking for a really thorough, practical introduction to garden design, whether for a specific project or just for their own interest. While it is not directly aimed at those looking to gain a professional qualification and work in the industry, it could also provide a valuable first step for anyone considering more in depth study</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+    <div class="footer">
+			<div class="footer-below">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                          <a>Copyright © 2015 by Social</a>
+                          <%= image_tag("local1.png", :alt => "") %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+  </body>
+</html>
